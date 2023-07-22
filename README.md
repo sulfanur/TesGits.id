@@ -1,16 +1,21 @@
 # TesGits.id
 Penjelasan Soal3.py
-## Penjelasan Fungsi:
+# Balanced Brackets Function
+## Deskripsi Fungsi
+Fungsi is_balanced_brackets digunakan untuk memeriksa apakah sebuah string yang mengandung tanda kurung memiliki tanda kurung yang seimbang atau tidak. Tanda kurung yang seimbang berarti setiap tanda buka (seperti (, [, atau {) memiliki pasangan tanda tutup yang cocok (seperti ), ], atau }). Fungsi ini mengembalikan "YES" jika string seimbang dan "NO" jika tidak.
 
-Fungsi is_balanced_brackets menerima string s yang berisi tanda kurung.
-Kita menggunakan stack untuk menyimpan tanda buka yang telah ditemukan.
-Selama iterasi, jika karakter adalah tanda buka, kita tambahkan ke stack.
-Jika karakter adalah tanda tutup, kita periksa apakah stack kosong (artinya tidak ada tanda buka yang cocok sebelumnya), jika iya, maka string tidak seimbang dan kita kembalikan "NO".
-Jika stack tidak kosong, kita keluarkan tanda buka terakhir dari stack dan periksa apakah tanda buka tersebut cocok dengan tanda tutup saat ini, jika tidak cocok, maka string tidak seimbang dan kita kembalikan "NO".
-Jika kita berhasil mengawasi seluruh karakter dalam string dan stack kosong, maka string seimbang dan kita kembalikan "YES", jika stack tidak kosong, maka string tidak seimbang dan kita kembalikan "NO".
-Kompleksitas Kodingan:
+## Input
+Fungsi ini menerima satu parameter:
 
+s: String yang berisi tanda kurung yang akan diperiksa.
+## Output
+Fungsi ini mengembalikan satu nilai:
+
+"YES" jika tanda kurung dalam string seimbang.
+"NO" jika tanda kurung dalam string tidak seimbang.
+## Cara Penggunaan
+Panggil fungsi is_balanced_brackets(s) dengan menyediakan string s yang berisi tanda kurung yang ingin diperiksa. Fungsi akan mengembalikan hasilnya berupa "YES" atau "NO" sesuai dengan keseimbangan tanda kurung dalam string.
+
+## Kompleksitas
 Kompleksitas waktu dari kodingan ini adalah O(n), di mana n adalah jumlah karakter dalam string input. Karena kita melintasi seluruh karakter sekali dan setiap operasi pada stack berjalan dalam waktu konstan, kompleksitasnya adalah linear terhadap panjang input.
 Kompleksitas ruang adalah O(n) karena kita menggunakan stack yang akan memiliki puncaknya dengan jumlah karakter yang sama dengan jumlah tanda buka yang belum memiliki pasangan tanda tutup pada string input.
-
-buatlah menjadi berkas redme.md
